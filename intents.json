@@ -1,40 +1,28 @@
-{
-  "intents": [
-    {
-      "tag": "greeting",
-      "responses": [
-        "Howdy Partner!",
-        "Hello",
-        "How are you doing?",
-        "Greetings!",
-        "How do you do?"
-      ]
-    },
-    {
-      "tag": "age",
-      "responses": [
-        "I am 25 years old",
-        "I was born in 1998",
-        "My birthday is July 3rd and I was born in 1998",
-        "03/07/1998"
-      ]
-    },
-    {
-      "tag": "date",
-      "responses": [
-        "I am available all week",
-        "I don't have any plans",
-        "I am not busy"
-      ]
-    },
-    { "tag": "name", "responses": ["My name is James", "I'm James", "James"] },
-    {
-      "tag": "goodbye",
-      "responses": [
-        "It was nice speaking to you",
-        "See you later",
-        "Speak soon!"
-      ]
-    }
-  ]
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["CN ka website, CN ka bot", "Tell what ninjas do."],
+         "context": [""]
+        }
+   ]
 }
