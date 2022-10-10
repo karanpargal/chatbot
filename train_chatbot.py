@@ -8,6 +8,9 @@ from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
 import random
 
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('punkt')
 lemmatizer = WordNetLemmatizer()
 words=[]
 classes = []
