@@ -21,7 +21,7 @@
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["CN ka website, CN ka bot", "Tell what ninjas do."],
+         "responses": ["I can help you get info", "There are many ways"],
          "context": [""]
         }
    ]
